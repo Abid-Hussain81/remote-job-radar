@@ -88,15 +88,57 @@ cp .env.example .env.local
 
 ---
 
+---
+
+## Source Adapter Framework
+
+The system utilizes a modular, pluggable adapter pattern located under [`src/lib/sources/`](file:///d:/notifyme/src/lib/sources/).
+
+### Active Sources & Credit Attributions
+- **RemoteOK** (`remoteok`): Consumes `https://remoteok.com/api`. Requires credit link on dashboard.
+- **We Work Remotely** (`wwr`): Sequential RSS category feeds (Full-Stack, Front-End, Back-End). Dedupes across categories.
+- **Jobicy** (`jobicy`): Consumes `https://jobicy.com/api/v2/remote-jobs`. Requires credit link; apply links must navigate to original feed `url`.
+- **Himalayas** (`himalayas`): Cursor-based pagination (`https://himalayas.app/jobs/api`). Pages up to 5 batches, dropping expired and >30-day stale listings. Requires credit link.
+
+*(Note: Remotive is explicitly omitted as its robots.txt disallows automated scrapers/bots.)*
+
+### Adapter Contract
+Every adapter implements the `SourceAdapter` interface:
+
+```typescript
+export interface SourceAdapter {
+  id: 'remoteok' | 'wwr' | 'jobicy' | 'himalayas';
+  fetchJobs(opts?: FetchOptions): Promise<NormalizedJob[]>;
+}
+```
+
+Key normalization guarantees:
+- **ID**: Deterministic `${source}:${externalId}`.
+- **Description**: Sanitized plain text via `htmlToText` (stripped tags, decoded entities, max 20,000 characters).
+- **Worldwide detection**: `isWorldwide: true` (open globally), `false` (restricted to specific countries), or `null` (unspecified).
+- **Polite HTTP client**: 15s timeout, 2 retries with backoff, standard User-Agent (`remote-job-radar/0.1 (personal job feed)`), and `credentials: 'omit'`.
+- **Fault isolation**: `runAllSources()` runs via `Promise.allSettled`, so a slow or failing source never halts other sources.
+
+### How to Add a New Source
+Adding a new source requires just two straightforward steps:
+1. **Create the adapter**: Create `src/lib/sources/<source-name>.ts` exporting an object satisfying `SourceAdapter`, along with a pure `normalize<Source>` function testable via fixtures.
+2. **Register the adapter**:
+   - Add the source identifier to `JobSource` in [`src/types/job.ts`](file:///d:/notifyme/src/types/job.ts).
+   - Add metadata (name, homepage, credit requirements) to `SOURCE_META` in [`src/lib/sources/meta.ts`](file:///d:/notifyme/src/lib/sources/meta.ts).
+   - Append the new adapter to `ADAPTERS` in [`src/lib/sources/index.ts`](file:///d:/notifyme/src/lib/sources/index.ts).
+
+---
+
 ## Roadmap & Milestones
 
 - [x] **Chunk 1: Scaffold & Database Model**
   - Next.js 16 (App Router) + TypeScript + ESLint + Vitest.
   - Normalized `Job` type and Mongoose model with compound indexes.
   - Cached serverless Mongoose connection helper and `/api/health` route.
-- [ ] **Chunk 2: Feed Adapters**
-  - Implement source adapters for RemoteOK, We Work Remotely RSS, Jobicy, and Himalayas.
-  - Plaintext extraction, salary normalization, deduplication key generation.
+- [x] **Chunk 2: Feed Adapters**
+  - Pluggable source adapter framework with resilient HTTP helper and text sanitizer.
+  - Adapters for RemoteOK, We Work Remotely (RSS), Jobicy, and Himalayas.
+  - Live verification script (`npm run sources:fetch`) and unit tests for each adapter.
 - [ ] **Chunk 3: Scoring Engine**
   - Pure scoring function with title/tag/description matchers, location bonuses, and penalty weights.
   - 100% test coverage with Vitest.

@@ -1,0 +1,64 @@
+{
+  "jobs": [
+    {
+      "id": 2001,
+      "url": "https://jobicy.com/jobs/2001-senior-react-developer",
+      "jobTitle": "Senior React Developer",
+      "companyName": "CloudScale",
+      "jobIndustry": ["Engineering", "SaaS"],
+      "jobType": ["Full-Time"],
+      "jobGeo": "Anywhere",
+      "jobLevel": "Senior",
+      "jobExcerpt": "Lead modern frontend architecture using Next.js and TypeScript.",
+      "jobDescription": "<p>Lead modern frontend architecture using Next.js and TypeScript.</p>",
+      "pubDate": "2026-10-05T15:00:00Z",
+      "salaryMin": 110000,
+      "salaryMax": 140000,
+      "salaryCurrency": "USD",
+      "salaryPeriod": "yearly"
+    },
+    {
+      "id": 2002,
+      "url": "https://jobicy.com/jobs/2002-fullstack-engineer",
+      "jobTitle": "Fullstack Engineer",
+      "companyName": "FinTech North",
+      "jobIndustry": ["FinTech"],
+      "jobType": ["Full-Time", "Contract"],
+      "jobGeo": "Canada",
+      "jobLevel": "Mid-Level",
+      "jobExcerpt": "Work on payment processing infrastructure.",
+      "jobDescription": "<div>Work on payment processing infrastructure.</div>",
+      "pubDate": "2026-10-06T10:00:00Z",
+      "salaryMin": 90000,
+      "salaryMax": 120000,
+      "salaryCurrency": "CAD",
+      "salaryPeriod": "yearly"
+    },
+    {
+      "id": 2003,
+      "url": "https://jobicy.com/jobs/2003-junior-qa-engineer",
+      "jobTitle": "Junior QA Engineer",
+      "companyName": "QualityFirst",
+      "jobIndustry": ["Quality Assurance"],
+      "jobType": ["Part-Time"],
+      "jobGeo": "United Kingdom",
+      "jobLevel": "Entry-Level",
+      "jobExcerpt": "Automated testing with Playwright and Cypress.",
+      "jobDescription": "<p>Automated testing with Playwright and Cypress.</p>",
+      "pubDate": "2026-10-07T08:00:00Z",
+      "salaryMin": 0,
+      "salaryMax": 0,
+      "salaryCurrency": "",
+      "salaryPeriod": ""
+    },
+    {
+      "id": 2004,
+      "url": "",
+      "jobTitle": "Incomplete Item",
+      "companyName": "MissingUrl LLC",
+      "pubDate": "2026-10-08T08:00:00Z"
+    }
+  ],
+  "hasMore": false,
+  "nextCursor": null
+}

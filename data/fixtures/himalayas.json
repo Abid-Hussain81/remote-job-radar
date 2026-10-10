@@ -1,0 +1,78 @@
+{
+  "jobs": [
+    {
+      "guid": "him-3001",
+      "title": "Lead DevOps Engineer",
+      "companyName": "Nebula Cloud",
+      "companySlug": "nebula-cloud",
+      "employmentType": "Full-time",
+      "minSalary": 130000,
+      "maxSalary": 170000,
+      "currency": "USD",
+      "salaryPeriod": "annual",
+      "seniority": ["Lead", "Senior"],
+      "locationRestrictions": [],
+      "timezoneRestrictions": [],
+      "categories": ["DevOps", "Kubernetes", "AWS"],
+      "parentCategories": ["Engineering"],
+      "description": "<p>Oversee multi-cloud Kubernetes clusters and CI/CD pipelines.</p>",
+      "pubDate": 1791547200,
+      "expiryDate": 1794225600,
+      "applicationLink": "https://himalayas.app/jobs/nebula-cloud/lead-devops-engineer"
+    },
+    {
+      "guid": "him-3002",
+      "title": "Senior Frontend Developer",
+      "companyName": "Alpine Software",
+      "companySlug": "alpine-software",
+      "employmentType": "Full-time",
+      "minSalary": 85000,
+      "maxSalary": 115000,
+      "currency": "EUR",
+      "salaryPeriod": "annual",
+      "seniority": ["Senior"],
+      "locationRestrictions": ["Germany", "Austria"],
+      "timezoneRestrictions": ["UTC+1", "UTC+2"],
+      "categories": ["Frontend", "Vue", "TypeScript"],
+      "parentCategories": ["Engineering"],
+      "description": "<div>Build high quality web applications for European clients.</div>",
+      "pubDate": 1791460800,
+      "expiryDate": 1794225600,
+      "applicationLink": "https://himalayas.app/jobs/alpine-software/senior-frontend-developer"
+    },
+    {
+      "guid": "him-3003",
+      "title": "Expired Job Title",
+      "companyName": "PastDue Inc",
+      "employmentType": "Full-time",
+      "seniority": ["Mid"],
+      "locationRestrictions": [],
+      "categories": ["Engineering"],
+      "description": "<p>This job has already expired.</p>",
+      "pubDate": 1790000000,
+      "expiryDate": 1791000000,
+      "applicationLink": "https://himalayas.app/jobs/pastdue/expired"
+    },
+    {
+      "guid": "him-3004",
+      "title": "Ancient Stale Job",
+      "companyName": "OldTimes Corp",
+      "employmentType": "Contract",
+      "seniority": ["Senior"],
+      "locationRestrictions": [],
+      "categories": ["Legacy"],
+      "description": "<p>This job was posted over 30 days ago.</p>",
+      "pubDate": 1787000000,
+      "expiryDate": 1795000000,
+      "applicationLink": "https://himalayas.app/jobs/oldtimes/stale"
+    },
+    {
+      "guid": "",
+      "title": "Missing GUID",
+      "companyName": "NoGuid Co",
+      "pubDate": 1791547200
+    }
+  ],
+  "nextCursor": "cursor-page-2",
+  "totalCount": 42
+}

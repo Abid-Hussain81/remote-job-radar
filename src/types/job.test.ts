@@ -12,6 +12,7 @@ describe('Job type and project sanity', () => {
       description: 'Exciting remote role with TypeScript and Next.js',
       tags: ['typescript', 'react', 'nextjs'],
       locationText: 'Worldwide',
+      isWorldwide: true,
       eligibleCountries: [],
       seniority: 'senior',
       employmentType: 'full-time',

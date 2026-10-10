@@ -41,6 +41,10 @@ const JobSchema = new Schema<Job>(
       type: String,
       default: '',
     },
+    isWorldwide: {
+      type: Boolean,
+      default: null,
+    },
     eligibleCountries: {
       type: [String],
       default: [],

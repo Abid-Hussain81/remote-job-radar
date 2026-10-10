@@ -14,6 +14,9 @@ export interface Job {
   description: string;
   tags: string[];
   locationText: string;
+  /** true = open worldwide, false = restricted, null = unknown */
+  isWorldwide: boolean | null;
+  /** Plain country names, no emoji */
   eligibleCountries: string[];
   seniority: string | null;
   employmentType: string | null;
@@ -30,3 +33,11 @@ export interface Job {
   matchedKeywords: string[];
   scoreReasons: string[];
 }
+
+/**
+ * Normalized job payload returned by source adapters prior to scoring and user state assignment.
+ */
+export type NormalizedJob = Omit<
+  Job,
+  'status' | 'score' | 'matchedKeywords' | 'scoreReasons'
+>;

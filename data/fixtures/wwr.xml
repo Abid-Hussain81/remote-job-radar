@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>We Work Remotely - Programming Jobs</title>
+    <link>https://weworkremotely.com</link>
+    <description>Remote programming jobs</description>
+    <item>
+      <title>Stripe: Senior Platform Engineer</title>
+      <link>https://weworkremotely.com/remote-jobs/stripe-senior-platform-engineer</link>
+      <guid>https://weworkremotely.com/remote-jobs/stripe-senior-platform-engineer</guid>
+      <pubDate>Mon, 06 Oct 2026 14:00:00 +0000</pubDate>
+      <region>Europe &amp; Africa</region>
+      <country>🇦🇩 Andorra, 🇦🇱 Albania, and 🇿🇦 South Africa</country>
+      <skills>TypeScript, React, Node.js</skills>
+      <category>Full-Stack Programming</category>
+      <type>Full-Time</type>
+      <description>&lt;p&gt;Help us build the economic infrastructure for the internet.&lt;/p&gt;</description>
+      <expires_at>2026-11-06T14:00:00Z</expires_at>
+    </item>
+    <item>
+      <title>GitLab: Staff Backend Engineer</title>
+      <link>https://weworkremotely.com/remote-jobs/gitlab-staff-backend-engineer</link>
+      <guid>https://weworkremotely.com/remote-jobs/gitlab-staff-backend-engineer</guid>
+      <pubDate>Tue, 07 Oct 2026 09:30:00 +0000</pubDate>
+      <region>Anywhere in the World</region>
+      <country></country>
+      <skills>Ruby, Go, PostgreSQL</skills>
+      <category>Back-End Programming</category>
+      <type>Full-Time</type>
+      <description>&lt;div&gt;Work fully remotely anywhere on earth.&lt;/div&gt;</description>
+      <expires_at>2026-11-07T09:30:00Z</expires_at>
+    </item>
+    <item>
+      <title>Shopify: Frontend Developer</title>
+      <link>https://weworkremotely.com/remote-jobs/shopify-frontend-developer</link>
+      <guid>https://weworkremotely.com/remote-jobs/shopify-frontend-developer</guid>
+      <pubDate>Wed, 08 Oct 2026 11:15:00 +0000</pubDate>
+      <region>USA Only</region>
+      <country></country>
+      <skills>React, GraphQL, CSS</skills>
+      <category>Front-End Programming</category>
+      <type>Contract</type>
+      <description>&lt;p&gt;Shape merchant dashboards.&lt;/p&gt;</description>
+      <expires_at>2026-11-08T11:15:00Z</expires_at>
+    </item>
+    <item>
+      <title>Incomplete Listing</title>
+      <link></link>
+      <pubDate>Thu, 09 Oct 2026 12:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
