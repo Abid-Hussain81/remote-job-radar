@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server';
 import { connectToDatabase } from '@/lib/db';
 import JobModel from '@/lib/models/Job';
 
-export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
