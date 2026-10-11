@@ -9,6 +9,25 @@ const htmlConverter = compile({
 });
 
 /**
+ * Decodes escaped HTML entities (such as &lt;, &gt;, &amp;, &quot;, &#39;, numeric).
+ */
+export function decodeHtmlEntities(text: string | null | undefined): string {
+  if (!text) return '';
+  return text
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(Number(dec)))
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) =>
+      String.fromCharCode(parseInt(hex, 16))
+    )
+    .replace(/&amp;/g, '&');
+}
+
+/**
  * Strips HTML tags, decodes entities, preserves list items as lines,
  * and limits output to max 20,000 characters.
  */

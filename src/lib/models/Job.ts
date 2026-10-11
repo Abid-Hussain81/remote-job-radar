@@ -11,7 +11,15 @@ const JobSchema = new Schema<Job>(
     },
     source: {
       type: String,
-      enum: ['remoteok', 'wwr', 'jobicy', 'himalayas'],
+      enum: [
+        'remoteok',
+        'wwr',
+        'jobicy',
+        'himalayas',
+        'greenhouse',
+        'lever',
+        'ashby',
+      ],
       required: true,
     },
     title: {
@@ -48,6 +56,31 @@ const JobSchema = new Schema<Job>(
     eligibleCountries: {
       type: [String],
       default: [],
+    },
+    isRemote: {
+      type: Boolean,
+      required: true,
+      default: true,
+    },
+    trust: {
+      type: String,
+      enum: ['direct', 'aggregator'],
+      required: true,
+      default: 'aggregator',
+    },
+    companyBoard: {
+      type: {
+        platform: {
+          type: String,
+          enum: ['greenhouse', 'lever', 'ashby'],
+          required: true,
+        },
+        token: {
+          type: String,
+          required: true,
+        },
+      },
+      default: null,
     },
     seniority: {
       type: String,

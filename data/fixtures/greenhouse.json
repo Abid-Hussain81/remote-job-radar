@@ -1,0 +1,45 @@
+{
+  "jobs": [
+    {
+      "id": 5001,
+      "title": "Senior Frontend Engineer",
+      "absolute_url": "https://boards.greenhouse.io/vercel/jobs/5001",
+      "company_name": "Vercel",
+      "location": { "name": "Remote - Australia" },
+      "first_published": "2026-10-01T12:00:00Z",
+      "updated_at": "2026-10-01T12:00:00Z",
+      "content": "&lt;div&gt;&lt;p&gt;Build state-of-the-art web infrastructure using &lt;strong&gt;Next.js&lt;/strong&gt;.&lt;/p&gt;&lt;/div&gt;",
+      "departments": [{ "name": "Engineering" }],
+      "offices": [
+        {
+          "name": "Remote - Australia",
+          "location": "Canberra, Australian Capital Territory, Australia"
+        }
+      ]
+    },
+    {
+      "id": 5002,
+      "title": "Staff Platform Architect",
+      "absolute_url": "https://boards.greenhouse.io/vercel/jobs/5002",
+      "company_name": "Vercel",
+      "location": { "name": "Remote" },
+      "first_published": "2026-10-02T09:00:00Z",
+      "updated_at": "2026-10-02T09:00:00Z",
+      "content": "&lt;p&gt;Global distributed cloud systems architect.&lt;/p&gt;",
+      "departments": [{ "name": "Infrastructure" }],
+      "offices": [{ "name": "Remote", "location": "" }]
+    },
+    {
+      "id": 5003,
+      "title": "Office Operations Coordinator",
+      "absolute_url": "https://boards.greenhouse.io/vercel/jobs/5003",
+      "company_name": "Vercel",
+      "location": { "name": "Hybrid - London" },
+      "first_published": "2026-10-03T10:00:00Z",
+      "updated_at": "2026-10-03T10:00:00Z",
+      "content": "&lt;p&gt;Hybrid London office operations role.&lt;/p&gt;",
+      "departments": [{ "name": "People Operations" }],
+      "offices": [{ "name": "London Office", "location": "London, United Kingdom" }]
+    }
+  ]
+}

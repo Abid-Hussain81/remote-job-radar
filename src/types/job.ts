@@ -1,6 +1,22 @@
-export type JobSource = 'remoteok' | 'wwr' | 'jobicy' | 'himalayas';
+export type JobSource =
+  | 'remoteok'
+  | 'wwr'
+  | 'jobicy'
+  | 'himalayas'
+  | 'greenhouse'
+  | 'lever'
+  | 'ashby';
 
 export type JobStatus = 'new' | 'applied' | 'hidden';
+
+export type JobTrust = 'direct' | 'aggregator';
+
+export type CompanyBoardPlatform = 'greenhouse' | 'lever' | 'ashby';
+
+export interface CompanyBoardInfo {
+  platform: CompanyBoardPlatform;
+  token: string;
+}
 
 export interface Job {
   /** Unique ID formed by `${source}:${externalId}` */
@@ -18,6 +34,12 @@ export interface Job {
   isWorldwide: boolean | null;
   /** Plain country names, no emoji */
   eligibleCountries: string[];
+  /** Whether the job is fully remote */
+  isRemote: boolean;
+  /** Direct from employer or aggregated */
+  trust: JobTrust;
+  /** Board platform and token if fetched directly from company board */
+  companyBoard: CompanyBoardInfo | null;
   seniority: string | null;
   employmentType: string | null;
   salaryMin: number | null;

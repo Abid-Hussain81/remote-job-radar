@@ -1,0 +1,52 @@
+[
+  {
+    "id": "lev-6001",
+    "text": "Fullstack Engineer",
+    "hostedUrl": "https://jobs.lever.co/spotify/lev-6001",
+    "applyUrl": "https://jobs.lever.co/spotify/lev-6001/apply",
+    "createdAt": 1790900000000,
+    "workplaceType": "remote",
+    "country": "SE",
+    "descriptionPlain": "Build music player web apps.",
+    "categories": {
+      "commitment": "Full-Time",
+      "department": "Engineering",
+      "team": "Web Platform",
+      "location": "Stockholm, Sweden",
+      "allLocations": ["Stockholm, Sweden", "Remote Sweden"]
+    }
+  },
+  {
+    "id": "lev-6002",
+    "text": "Data Infrastructure Engineer",
+    "hostedUrl": "https://jobs.lever.co/spotify/lev-6002",
+    "applyUrl": "https://jobs.lever.co/spotify/lev-6002/apply",
+    "createdAt": 1790910000000,
+    "workplaceType": "remote",
+    "descriptionPlain": "",
+    "description": "<p>Lead telemetry pipelines and data ingestion.</p>",
+    "lists": [
+      {
+        "text": "Key Qualifications",
+        "content": "<ul><li>5+ years Node.js and TypeScript</li><li>Distributed streaming experience</li></ul>"
+      }
+    ],
+    "additionalPlain": "We celebrate diversity and equality.",
+    "categories": {
+      "commitment": "Full-Time",
+      "department": "Infrastructure",
+      "location": "Remote"
+    }
+  },
+  {
+    "id": "lev-6003",
+    "text": "Office Host",
+    "hostedUrl": "https://jobs.lever.co/spotify/lev-6003",
+    "createdAt": 1790920000000,
+    "workplaceType": "hybrid",
+    "descriptionPlain": "In-person reception and facilities management.",
+    "categories": {
+      "location": "New York Office"
+    }
+  }
+]

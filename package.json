@@ -9,15 +9,18 @@
     "lint": "eslint",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "sources:fetch": "tsx scripts/fetch-sources.ts"
+    "sources:fetch": "tsx scripts/fetch-sources.ts",
+    "companies:fetch": "tsx scripts/fetch-companies.ts"
   },
   "dependencies": {
     "fast-xml-parser": "^5.11.2",
     "html-to-text": "^10.0.1",
+    "i18n-iso-countries": "^7.14.0",
     "mongoose": "^9.11.1",
     "next": "16.4.0",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",

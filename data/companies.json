@@ -1,0 +1,18 @@
+[
+  { "name": "Vercel", "platform": "greenhouse", "token": "vercel" },
+  { "name": "GitLab", "platform": "greenhouse", "token": "gitlab" },
+  { "name": "Stripe", "platform": "greenhouse", "token": "stripe" },
+  { "name": "Cloudflare", "platform": "greenhouse", "token": "cloudflare" },
+  { "name": "Datadog", "platform": "greenhouse", "token": "datadog" },
+  { "name": "Airbnb", "platform": "greenhouse", "token": "airbnb" },
+  { "name": "Figma", "platform": "greenhouse", "token": "figma" },
+  { "name": "Discord", "platform": "greenhouse", "token": "discord" },
+  { "name": "Reddit", "platform": "greenhouse", "token": "reddit" },
+  { "name": "Spotify", "platform": "lever", "token": "spotify" },
+  { "name": "Palantir", "platform": "lever", "token": "palantir" },
+  { "name": "Ashby", "platform": "ashby", "token": "ashby" },
+  { "name": "Notion", "platform": "ashby", "token": "notion" },
+  { "name": "Linear", "platform": "ashby", "token": "linear" },
+  { "name": "Ramp", "platform": "ashby", "token": "ramp" },
+  { "name": "OpenAI", "platform": "ashby", "token": "openai" }
+]

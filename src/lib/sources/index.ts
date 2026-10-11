@@ -4,15 +4,23 @@ import { remoteOkAdapter } from './remoteok';
 import { wwrAdapter } from './wwr';
 import { jobicyAdapter } from './jobicy';
 import { himalayasAdapter } from './himalayas';
+import { greenhouseAdapter } from './greenhouse';
+import { leverAdapter } from './lever';
+import { ashbyAdapter } from './ashby';
 
 export * from './types';
 export * from './meta';
 export * from './http';
 export * from './clean';
+export * from './companies';
+export * from './detect-board';
 export { remoteOkAdapter, normalizeRemoteOk } from './remoteok';
 export { wwrAdapter, normalizeWwrItems, normalizeWwrXml } from './wwr';
 export { jobicyAdapter, normalizeJobicy } from './jobicy';
 export { himalayasAdapter, normalizeHimalayas } from './himalayas';
+export { greenhouseAdapter, normalizeGreenhouseJobs } from './greenhouse';
+export { leverAdapter, normalizeLeverPostings } from './lever';
+export { ashbyAdapter, normalizeAshbyJobs } from './ashby';
 
 /**
  * Pluggable registry of all active source adapters.
@@ -23,6 +31,9 @@ export const ADAPTERS: SourceAdapter[] = [
   wwrAdapter,
   jobicyAdapter,
   himalayasAdapter,
+  greenhouseAdapter,
+  leverAdapter,
+  ashbyAdapter,
 ];
 
 export interface RunAllSourcesResult {
@@ -49,6 +60,9 @@ export async function runAllSources(
           ok: true,
           count: jobs.length,
           ms,
+          details: adapter.getLastRunDetails
+            ? adapter.getLastRunDetails()
+            : undefined,
         };
         return { jobs, result };
       } catch (err) {
@@ -60,6 +74,9 @@ export async function runAllSources(
           count: 0,
           error: message,
           ms,
+          details: adapter.getLastRunDetails
+            ? adapter.getLastRunDetails()
+            : undefined,
         };
         return { jobs: [], result };
       }
@@ -74,7 +91,6 @@ export async function runAllSources(
       allJobs.push(...item.value.jobs);
       results.push(item.value.result);
     } else {
-      // In case the wrapper itself threw unexpectedly
       results.push({
         source: 'unknown',
         ok: false,

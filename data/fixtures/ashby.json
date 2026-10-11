@@ -1,0 +1,83 @@
+{
+  "jobs": [
+    {
+      "id": "ash-7001",
+      "title": "Senior Product Designer",
+      "department": "Design",
+      "team": "Product Experience",
+      "employmentType": "FullTime",
+      "location": "Remote - Europe",
+      "publishedAt": "2026-10-04T14:00:00Z",
+      "isListed": true,
+      "isRemote": true,
+      "workplaceType": "Remote",
+      "jobUrl": "https://jobs.ashbyhq.com/ashby/ash-7001",
+      "applyUrl": "https://jobs.ashbyhq.com/ashby/ash-7001/application",
+      "descriptionPlain": "Design beautiful recruiting interfaces.",
+      "descriptionHtml": "<p>Design beautiful recruiting interfaces.</p>",
+      "address": {
+        "postalAddress": {
+          "addressCountry": "Germany"
+        }
+      },
+      "secondaryLocations": [
+        {
+          "location": "Remote - France",
+          "address": {
+            "postalAddress": {
+              "addressCountry": "France"
+            }
+          }
+        },
+        {
+          "location": "Remote - Spain",
+          "address": {
+            "postalAddress": {
+              "addressCountry": "Spain"
+            }
+          }
+        }
+      ],
+      "compensation": {
+        "summaryComponents": [
+          {
+            "compensationType": "Salary",
+            "minValue": 100000,
+            "maxValue": 130000,
+            "currencyCode": "EUR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ash-7002",
+      "title": "Unlisted Strategic Role",
+      "isListed": false,
+      "isRemote": true,
+      "workplaceType": "Remote",
+      "jobUrl": "https://jobs.ashbyhq.com/ashby/ash-7002",
+      "publishedAt": "2026-10-05T12:00:00Z"
+    },
+    {
+      "id": "ash-7003",
+      "title": "HQ Office Manager",
+      "isListed": true,
+      "isRemote": false,
+      "workplaceType": "OnSite",
+      "location": "San Francisco, CA",
+      "jobUrl": "https://jobs.ashbyhq.com/ashby/ash-7003",
+      "publishedAt": "2026-10-06T12:00:00Z"
+    },
+    {
+      "id": "ash-7004",
+      "title": "Worldwide Developer Advocate",
+      "isListed": true,
+      "isRemote": true,
+      "workplaceType": "Remote",
+      "location": "Remote",
+      "jobUrl": "https://jobs.ashbyhq.com/ashby/ash-7004",
+      "publishedAt": "2026-10-07T12:00:00Z",
+      "descriptionPlain": "Engage developer communities across the globe."
+    }
+  ]
+}

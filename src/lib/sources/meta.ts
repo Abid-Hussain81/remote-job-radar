@@ -34,4 +34,19 @@ export const SOURCE_META: Record<JobSource, SourceMeta> = {
     requiresCredit: true,
     creditText: 'Jobs provided by Himalayas',
   },
+  greenhouse: {
+    name: 'Greenhouse Job Board',
+    homepage: 'https://boards.greenhouse.io',
+    requiresCredit: false,
+  },
+  lever: {
+    name: 'Lever Job Board',
+    homepage: 'https://jobs.lever.co',
+    requiresCredit: false,
+  },
+  ashby: {
+    name: 'Ashby Job Board',
+    homepage: 'https://jobs.ashbyhq.com',
+    requiresCredit: false,
+  },
 };
